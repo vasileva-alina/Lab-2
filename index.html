@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Лабораторная 2</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+.task {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Лабораторная №2</h1>
+
+<div class="task">
+  <h2>Задание 1:Загадки</h2>
+  <p>Отгадок: <span id="correctAnswers">0</span></p>
+  <p id="riddle"></p>
+  <input type="text" id="answerInput">
+  <button onclick="checkAnswer()">Проверить</button>
+</div>
+
+<div class="task">
+  <h2>Задание 2:Счетчик</h2>
+  <p>Текущее число: <span id="counter">1</span></p>
+  <button onclick="incrementCounter()">+</button>
+</div>
+
+<div class="task">
+  <h2>Задание 3:Застолье</h2>
+  <button onclick="startFeast()">Начать застолье</button>
+  <p id="feastResult"></p>
+</div>
+
+<div class="task">
+  <h2>Задание 4:Факториал числа</h2>
+  <input type="number" id="number" placeholder="Введите число">
+  <button id="calculate">Вычислить</button>
+  <p id="result"></p>
+</div>
+
+<div class="task">
+  <h2>Задание 5:Проверка фамилии на палиндром</h2>
+  <input type="text" id="surname" placeholder="Введите фамилию">
+  <button id="checkPalindrome">Проверить</button>
+  <p id="palindromeResult"></p>
+</div>
+
+<div class="task">
+  <h2>Задание 6: Простые числа</h2>
+  <input type="number" id="limit" placeholder="Введите предел">
+  <button id="findPrimes">Вычислить</button>
+  <p id="primesResult"></p>
+</div>
+<div class="task">
+<h2>Доп.Задание: Угадай число от 1 до 100</h2>
+  <input type="number" id="guess" placeholder="Ваше предположение">
+  <button id="check">Проверить</button>
+  <p id="message"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
